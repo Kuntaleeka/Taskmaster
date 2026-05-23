@@ -15,8 +15,6 @@ const navItems = [
   { href: "/about", label: "About", icon: Info },
 ];
 
-import { GaseousDivider } from "./GaseousDivider";
-
 import { useState, useEffect } from "react";
 import { getProfile } from "@/app/actions/gamification";
 import { Swords, Brain, Coins, HeartPulse, Users } from "lucide-react";
@@ -214,14 +212,6 @@ export default function Navbar() {
             </div>
           )}
         </div>
-      </div>
-
-      <div className="relative h-px w-full overflow-visible">
-        <GaseousDivider
-          hoveredSide={null}
-          variant="artpaint"
-          align="top"
-        />
       </div>
     </div>
   );
