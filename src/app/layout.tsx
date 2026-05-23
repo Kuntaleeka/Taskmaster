@@ -50,6 +50,11 @@ export default function RootLayout({
             <main className="flex-1 overflow-auto relative pb-24 lg:pb-0">
               {children}
             </main>
+            <div className="fixed bottom-4 right-4 z-50 pointer-events-none">
+              <div className="bg-black/20 dark:bg-white/10 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/10 text-xs font-medium text-muted-foreground/80 shadow-lg">
+                by K Kundu
+              </div>
+            </div>
           </div>
         </ThemeProvider>
       </body>
